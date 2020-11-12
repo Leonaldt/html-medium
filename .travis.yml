@@ -3,4 +3,10 @@ python:
 - 3.6.3
 script:
 - python test.py
-
+deploy:  
+  provider: heroku  
+  app: html-medium
+  on:    
+    branch: master
+  api_key:
+    secure: a1a214f7-8576-44f9-b715-b6b896659172
